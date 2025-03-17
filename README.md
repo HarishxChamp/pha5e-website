@@ -1,4 +1,4 @@
-# Pha5e Hero Section
+# Pha5e website
 
 A modern, responsive hero section implementation inspired by the Pha5e design, featuring smooth animations and interactive elements.
 
