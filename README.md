@@ -3,7 +3,7 @@
 A modern, responsive hero section implementation inspired by the Pha5e design, featuring smooth animations and interactive elements.
 
 ## Live Demo
-Check out the live demo: [Pha5e Hero Section](https://harishxchamp.github.io/pha5e-hero-section/)
+Check out the live demo: [Pha5e website]((https://harishxchamp.github.io/pha5e-website/))
 
 ## Features
 
@@ -24,7 +24,7 @@ Check out the live demo: [Pha5e Hero Section](https://harishxchamp.github.io/pha
 ## Project Structure
 
 ```
-pha5e-hero-section/
+pha5e-website/
 ├── index.html
 ├── styles.css
 ├── script.js
