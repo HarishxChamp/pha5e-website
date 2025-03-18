@@ -1,0 +1,48 @@
+[33mcommit 925a3c647e8fb86969a444d70940aa076a5f11e3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: HarishxChamp <your-email@example.com>
+Date:   Tue Mar 18 11:00:26 2025 +0530
+
+    Updated image gallery styles and structure
+
+[33mcommit 9d86d727ceb40b2edd89ba42fb0ec17bfd7fa1a5[m
+Merge: 5c0e298 d8c7511
+Author: HarishxChamp <your-email@example.com>
+Date:   Tue Mar 18 10:03:53 2025 +0530
+
+    Resolved merge conflicts and updated README
+
+[33mcommit 5c0e2989d5bb61085dcbe0850793710b9d31b5b6[m
+Author: HarishxChamp <your-email@example.com>
+Date:   Tue Mar 18 09:59:00 2025 +0530
+
+    Updated styles and content for the website
+
+[33mcommit d8c75112b8d7ee2fe2099b5b635b21506353ed64[m
+Author: HarishxChamp <harishyarra79@gmail.com>
+Date:   Mon Mar 17 22:52:10 2025 +0530
+
+    Update README.md
+
+[33mcommit fdb376754902bb643a3b220756f30365c1fdd1ff[m
+Author: HarishxChamp <harishyarra79@gmail.com>
+Date:   Mon Mar 17 22:50:58 2025 +0530
+
+    Update README.md
+
+[33mcommit 52658a3f9e64425ca09049b2b10bb55478663770[m
+Author: HarishxChamp <harishyarra79@gmail.com>
+Date:   Mon Mar 17 22:50:35 2025 +0530
+
+    Create README.md
+
+[33mcommit 70701385a53c6b03cc430263d13a4d1e0ac5bc26[m
+Author: HarishxChamp <your-email@example.com>
+Date:   Mon Mar 17 22:47:21 2025 +0530
+
+    Initial commit
+
+[33mcommit 6866eb82910963fdc1fd6069b5830adf86046b80[m
+Author: HarishxChamp <your-email@example.com>
+Date:   Mon Mar 17 22:34:00 2025 +0530
+
+    initial commit
