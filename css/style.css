@@ -6,6 +6,12 @@
     --light-text: #ffffff;
     --background-color: #f4f4f4;
 }
+:root {
+    --primary: #f1e6ff; /* Updated to deep purple */
+    --accent: #f59e0b;
+    --dark: #0f172a;
+    --light: #f8fafc;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -20,6 +26,7 @@ body {
     backdrop-filter: blur(10px);
     padding: 1rem 0;
     transition: all 0.3s ease;
+    z-index: 1000; /* Ensure navbar is above other content */
 }
 
 .navbar.scrolled {
@@ -83,6 +90,7 @@ body {
     min-height: 100vh;
     background: linear-gradient(45deg, var(--primary-color) 0%, #311B92 100%);
     overflow: hidden;
+    padding-top: 100px; /* Add padding to prevent overlap with the navbar */
 }
 
 .hero-overlay {
@@ -104,27 +112,38 @@ body {
     padding: 2rem;
 }
 
+.hero-title {
+    font-size: 4vw; /* Adjusted for better responsiveness */
+    font-weight: 800;
+    color: var(--light-text);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem; /* Reduced margin */
+    line-height: 1.2;
+}
+
 .hero-label {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.7);
     padding: 0.5rem 1rem;
     border-radius: 50px;
-    color: var(--secondary-color);
-    font-size: 0.9rem;
+    color: var(--primary);
+    font-size: 1.5vw; /* Adjusted for better responsiveness */
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     backdrop-filter: blur(5px);
 }
 
-.hero-title {
-    font-size: 4.5rem;
-    font-weight: 700;
-    color: var(--light-text);
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-}
+/* Media Queries for further adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+    }
 
+    .hero-label {
+        font-size: 2.5vw; /* Adjust font size for smaller screens */
+    }
+}
 .hero-title .highlight {
     color: var(--secondary-color);
     position: relative;
@@ -380,4 +399,55 @@ body {
         gap: 1.5rem;
         padding: 2rem 0;
     }
+}.cursor-dot,
+.cursor-outline {
+    width: 8px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.8; /* Slightly increase opacity */
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease; /* Add background transition */
+    box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary); /* Glow effect */
+}
+
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--primary);
+    transition: all 0.2s ease;
+    box-shadow: 0 0 15px var(--primary), 0 0 30px var(--primary); /* Glow effect */
+}
+
+/* Scale effect on hover */
+.cursor-dot:hover,
+.cursor-outline:hover {
+    transform: scale(1.2); /* Slightly increase size */
+    background: rgba(74, 20, 140, 0.6); /* Change color on hover */
+    box-shadow: 0 0 20px var(--primary), 0 0 40px var(--primary); /* Enhanced glow effect */
+}
+
+/* Pulsing effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply pulsing effect to cursor-dot */
+.cursor-dot {
+    animation: pulse 1.5s infinite; /* Pulsing animation */
+}
+.cursor-dot,
+.cursor-outline {
+    z-index: 9999; /* Ensure this is high enough */
 }

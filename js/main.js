@@ -189,3 +189,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+// Custom cursor effect
+const cursorDot = document.querySelector('.cursor-dot');
+const cursorOutline = document.querySelector('.cursor-outline');
+
+document.addEventListener('mousemove', (e) => {
+    cursorDot.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+    cursorOutline.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+});
+
+document.addEventListener('mouseenter', () => {
+    cursorDot.style.opacity = 1;
+    cursorOutline.style.opacity = 1;
+});
+
+document.addEventListener('mouseleave', () => {
+    cursorDot.style.opacity = 0;
+    cursorOutline.style.opacity = 0;
+});
+document.addEventListener('mousemove', (e) => {
+    console.log('Mouse moved:', e.clientX, e.clientY); // Debugging line
+    cursorDot.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+    cursorOutline.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+});
